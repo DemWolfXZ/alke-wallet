@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/transactions.css">
+  <title>Últimos Movimientos</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Últimos Movimientos</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5>Filtrar por tipo</h5>
+            <form id="filtroForm">
+              <div class="form-group">
+                <select id="filtroTipo" class="form-control">
+                  <option value="todos">Todos</option>
+                  <option value="deposito">Depósito</option>
+                  <option value="transferencia">Transferencia</option>
+                  <option value="compra">Compra</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5>Movimientos</h5>
+            <ul id="listaMovimientos" class="list-group"></ul>
+          </div>
+        </div>
+
+        <a href="menu.html" class="btn btn-secondary btn-block mt-3">Volver al Menú</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/transactions.js"></script>
+</body>
+</html>

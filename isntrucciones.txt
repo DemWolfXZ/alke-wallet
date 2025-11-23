@@ -1,0 +1,17 @@
+Cosas que debe hacer el usuario:
+-loguearse
+-agendar contactos para futuras transferencias
+-realizar movimientos y transccaiones dentro de la plataforma
+
+
+
+Requerimientos generales:
+→ Registro e inicio de sesión: Se les asignará a los usuarios una cuenta y acceder a la aplicación utilizando credenciales seguras.
+→ Administración de fondos: Los usuarios deben poder ver su saldo disponible, realizar depósitos y retiros de fondos.
+→ Envío y recepción de fondos: Los usuarios deben poder simular un envió de fondos a otras cuentas dentro de la aplicación y recibir fondos propios.
+→ Historial de transacciones: Debe haber un registro completo de todas las transacciones realizadas en la aplicación.
+
+
+
+
+
