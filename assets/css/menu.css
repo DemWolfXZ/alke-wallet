@@ -1,11 +1,15 @@
-/* Estilos globales - Fondo morado para todas las páginas */
+/* ====================================
+   ESTILOS MENÚ PRINCIPAL
+   ==================================== */
+
+/* Fondo con gradiente morado */
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding: 20px 0;
 }
 
-/* Estilos de la tarjeta bancaria */
+/* Tarjeta tipo crédito/débito */
 .card-tarjeta {
   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   border: none;

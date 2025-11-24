@@ -1,11 +1,14 @@
+// ====================================
+// GESTIÓN DE CONTACTOS - MENU.HTML
+// ====================================
 
-// Clave que usaremos en localStorage para guardar los contactos
+// Clave para localStorage
 const CONTACTOS_KEY = 'wallet_contactos';
 
-// Array donde tendremos los contactos en memoria
+// Array de contactos en memoria
 let datoscontactos = [];
 
-// Esperamos a que el DOM esté listo antes de trabajar con los elementos
+// Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function () {
   // Obtenemos la referencia al botón "Guardar" del modal
   const botonAgregarContacto = document.getElementById('guardarContacto');
