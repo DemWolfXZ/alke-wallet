@@ -1,16 +1,20 @@
-/* Estilos globales - Fondo morado */
+/* ====================================
+   ESTILOS PÁGINA DE DEPÓSITOS
+   ==================================== */
+
+/* Fondo con gradiente morado */
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding: 20px 0;
 }
 
-/* Contenedor principal */
+/* Espaciado del contenedor */
 .container {
   margin-top: 50px;
 }
 
-/* Títulos */
+/* Título principal */
 h1 {
   color: white;
   font-weight: bold;
@@ -23,7 +27,7 @@ h4 {
   font-weight: 600;
 }
 
-/* Card principal */
+/* Tarjeta que muestra el saldo */
 .card {
   border: none;
   border-radius: 15px;
@@ -35,7 +39,7 @@ h4 {
   padding: 25px;
 }
 
-/* Formulario */
+/* Estilos del formulario de depósito */
 .form-group {
   margin-bottom: 20px;
 }
