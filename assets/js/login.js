@@ -13,6 +13,9 @@ $(document).ready(function() {
       alert('Usuario o contraseña invalido. Inténtalo de nuevo.');
     }
   });
+
 });
 
 
+// Marcador de funcionalidad de login
+console.log('Login funcionando en feature/login');
