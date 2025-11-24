@@ -1,10 +1,13 @@
+// Ejecutar cuando el DOM esté listo
 $(document).ready(function() {
+  // Cargar transacciones desde localStorage o usar datos de ejemplo
   var listaTransacciones = JSON.parse(localStorage.getItem('transacciones')) || [
     { tipo: 'deposito', monto: 1000, fecha: '15/11/2025' },
     { tipo: 'compra', monto: 50, fecha: '16/11/2025', descripcion: 'Supermercado' },
     { tipo: 'transferencia', monto: 200, fecha: '17/11/2025', destinatario: 'Juan Pérez' }
   ];
 
+  // Convertir tipo de transacción a texto legible
   function getTipoTransaccion(tipo) {
     switch(tipo) {
       case 'deposito': return 'Depósito';
@@ -14,9 +17,11 @@ $(document).ready(function() {
     }
   }
 
+  // Mostrar movimientos filtrados por tipo
   function mostrarUltimosMovimientos(filtro) {
     $('#listaMovimientos').empty();
     
+    // Filtrar transacciones según el tipo seleccionado
     var movimientosFiltrados = listaTransacciones;
     if (filtro !== 'todos') {
       movimientosFiltrados = listaTransacciones.filter(function(transaccion) {

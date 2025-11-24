@@ -1,16 +1,20 @@
-/* Estilos globales - Fondo morado */
+/* ====================================
+   ESTILOS PÁGINA ENVIAR DINERO
+   ==================================== */
+
+/* Fondo con gradiente morado */
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding: 20px 0;
 }
 
-/* Contenedor principal */
+/* Espaciado del contenedor */
 .container {
   margin-top: 50px;
 }
 
-/* Títulos */
+/* Estilos de títulos */
 h1 {
   color: white;
   font-weight: bold;
@@ -24,7 +28,7 @@ h5 {
   margin-bottom: 20px;
 }
 
-/* Cards */
+/* Tarjetas para formularios y contactos */
 .card {
   border: none;
   border-radius: 15px;

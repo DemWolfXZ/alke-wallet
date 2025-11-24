@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap para diseño responsive -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Estilos de transacciones -->
   <link rel="stylesheet" href="assets/css/transactions.css">
   <title>Últimos Movimientos</title>
 </head>
@@ -12,6 +14,7 @@
     <h1 class="text-center">Últimos Movimientos</h1>
     <div class="row justify-content-center">
       <div class="col-md-8">
+        <!-- Card con filtro de transacciones -->
         <div class="card mb-3">
           <div class="card-body">
             <h5>Filtrar por tipo</h5>
@@ -28,6 +31,7 @@
           </div>
         </div>
 
+        <!-- Card con lista de transacciones -->
         <div class="card">
           <div class="card-body">
             <h5>Movimientos</h5>
@@ -35,13 +39,17 @@
           </div>
         </div>
 
+        <!-- Botón volver al menú -->
         <a href="menu.html" class="btn btn-secondary btn-block mt-3">Volver al Menú</a>
       </div>
     </div>
   </div>
 
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Lógica de transacciones -->
   <script src="assets/js/transactions.js"></script>
 </body>
 </html>

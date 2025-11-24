@@ -1,8 +1,10 @@
+// Ejecutar cuando el DOM esté listo
 $(document).ready(function() {
-  // Cargar contactos desde la misma clave que usa menu.html
+  // Cargar contactos guardados en localStorage
   var contactos = JSON.parse(localStorage.getItem('wallet_contactos')) || [];
   var contactoSeleccionado = null;
 
+  // Renderizar lista de contactos en pantalla
   function mostrarContactos(lista) {
     $('#listaContactos').empty();
     
@@ -34,12 +36,15 @@ $(document).ready(function() {
     });
   }
 
+  // Mostrar contactos al cargar la página
   mostrarContactos(contactos);
 
+  // Mostrar formulario al hacer click en agregar contacto
   $('#btnAgregarContacto').click(function() {
     $('#formNuevoContacto').show();
   });
 
+  // Ocultar formulario al cancelar
   $('#btnCancelar').click(function() {
     $('#formNuevoContacto').hide();
     $('#nuevoContactoForm')[0].reset();
